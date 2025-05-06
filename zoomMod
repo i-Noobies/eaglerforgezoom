@@ -1,0 +1,11 @@
+document.addEventListener("keydown", function(e) {
+  if (e.key === "z") {
+    ModAPI.player.setFov(30); // zoom in
+  }
+});
+
+document.addEventListener("keyup", function(e) {
+  if (e.key === "z") {
+    ModAPI.player.setFov(70); // reset FOV
+  }
+});
